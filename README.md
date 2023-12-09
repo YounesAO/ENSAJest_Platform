@@ -1,2 +1,5 @@
-this is the project cell n : 2 :
-Creating the ENSAJ Students Platform /:)
+--> this is the project cell n°2 :
+  ==$Bou-Mery
+  ==$Jaafarhh
+  ==$YounesAO
+!!!!!--> Creating the ENSAJ Students Platform /:)
