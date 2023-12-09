@@ -1,22 +1,88 @@
 body{
     margin:0;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
     height: 100vh;
-    background:linear-gradient(#ffffff,#b5ffb8), rgb(143, 182, 255);
+    background-color: #E8EADC;
+   
+}
+#logo{
+    width: 50%;
+    object-fit: cover;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
 }
 .container{
-    height: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: rgb(169, 199, 255);
+    align-items: flex-start;
+    background-color: #3997ce83;
     border-radius: 12px;
-    padding: 10px;
+    padding: 40px;
     min-height: 200px;
-    min-width: 20%;
+    min-width: 50%;
     
 
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+button{
+    width: 100%;
+    margin: 6px;
+    padding: 10px;
+    border: solid transparent 1px ;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+}
+input,select,option {
+    font-size: 15px;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 9px;
+    margin-bottom:4px;
+    border: solid #298a8d 1px ;
+    border-radius: 3px;
+}
+label{
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#submit{
+    background-color: #20a524;
+    color: white;
+
+}
+#more{
+    background-color: #e4e4e4;
+    color: rgb(0, 0, 0);
+}
+button:hover{
+    opacity: 0.6;
+    border:solid #073040 1px;
+    transition: all  200ms ease-in;
+}
+#forget{
+    font-size: medium;
+    font-weight: 600;
+    color: rgb(6, 68, 118);
+    text-decoration: underline;
+    margin: 3px 0px 2px 0px;
+}
+@media only screen and (max-width: 600px) {
+    #logo {
+    display: none;
+    }
 }

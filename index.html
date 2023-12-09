@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <img id="logo" src="./logo.jpeg" alt="">
+    <div class="box">
+        <h1>Se connecter a votre espace :</h1>
+
     <div class="container">
         <label for="username">Nom d'utilisateur</label>
-        <input type="email" name="username" id="username">
+        <input type="email" name="username" id="username" placeholder="xyz@edu.ucd.ac.ma">
         <label for="password">Mot de passe</label>
-        <input type="password" name="password" id="password">
-        <a href="/forget">j'ai oublier mot de passe</a>
-        <button>Connecter</button>
+        <input type="password" name="password" id="password" placeholder="mot de passe">
+        <a href="/forget" id ="forget">j'ai oublier mot de passe</a>
+        <div class="buttons">
+            <button id="submit">Connecter</button>
+            <a href="./signUp.html"><button>j'ai pas de compte</button></a>
+        </div>
+    </div>
     </div>
 </body>
 </html>
