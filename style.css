@@ -1,15 +1,26 @@
+*{
+    --dark_bg: #161324;
+    --dark_bg1: #8C4968;
+    --dark_btn: #BF5934;
+
+    transition: all 700ms linear; 
+
+}
 body{
     margin:0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 100vh;
-    background-color: #E8EADC;
-   
+    background-color:#E8EADC 
 }
+
 #logo{
     width: 50%;
     object-fit: cover;
+    transition:  opacity 3s linear; 
+
+
 }
 .box{
     display: flex;
@@ -27,7 +38,8 @@ body{
     padding: 40px;
     min-height: 200px;
     min-width: 50%;
-    
+    transition: all 600ms linear; 
+
 
 }
 .buttons{
@@ -58,7 +70,12 @@ label{
     margin-bottom: 5px;
     font-size: 15px;
     font-weight: 600;
+    color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#title{
+    color: rgb(42, 40, 40);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #submit{
     background-color: #20a524;
@@ -85,4 +102,46 @@ button:hover{
     #logo {
     display: none;
     }
+}
+body.dark{
+    background-color: var(--dark_bg);
+}
+body.dark .container{
+    background-color: var(--dark_bg1);
+}body.dark #submit {
+    background-color: var(--dark_btn);
+}body.dark #title{
+    color:#E8EADC;
+}
+#dark{
+    width: 25%;
+    font-size: xx-large;
+    margin: 0;
+    padding:0;
+    background-color: transparent;
+}
+#light{
+    display: none;
+    width: 25%;
+    font-size: xx-large;
+    margin: 0;
+    padding:0;
+    background-color: transparent;
+}
+.dark #light{
+display: block;
+
+}
+#dark_toggle{
+    position: absolute;
+    top:0 ;
+    right :0;
+    width: 200px;
+    display: flex;
+    margin: 10px;
+    padding:0;
+    justify-content: end;
+}
+.dark #dark{
+    display: none;
 }

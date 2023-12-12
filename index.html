@@ -9,19 +9,54 @@
 <body>
     <img id="logo" src="./logo.jpeg" alt="">
     <div class="box">
-        <h1>Se connecter a votre espace :</h1>
+        <div id="dark_toggle">
+            <button id="dark">🌚</button>
+            <button id="light">🌞</button>
+        </div>
+        <h1 id="title">Se connecter a votre espace :</h1>
 
-    <div class="container">
-        <label for="username">Nom d'utilisateur</label>
-        <input type="email" name="username" id="username" placeholder="xyz@edu.ucd.ac.ma">
-        <label for="password">Mot de passe</label>
-        <input type="password" name="password" id="password" placeholder="mot de passe">
-        <a href="/forget" id ="forget">j'ai oublier mot de passe</a>
-        <div class="buttons">
-            <button id="submit">Connecter</button>
-            <a href="./signUp.html"><button>j'ai pas de compte</button></a>
+        <div class="container">
+            <label for="username">Nom d'utilisateur</label>
+            <input type="email" name="username" id="username" placeholder="xyz@edu.ucd.ac.ma">
+            <label for="password">Mot de passe</label>
+            <input type="password" name="password" id="password" placeholder="mot de passe">
+            <a href="/forget" id ="forget">j'ai oublier mot de passe</a>
+            <div class="buttons">
+                <button id="submit">Connecter</button>
+                <a href="./signUp.html"><button>j'ai pas de compte</button></a>
+            </div>
         </div>
     </div>
-    </div>
 </body>
+    <!--hadchi ghir bach tgad button machi chi 7aja 😅-->
+<script>
+    const dark = document.getElementById('dark');
+    const light = document.getElementById('light');
+    const body = document.body;
+    const logo =document.getElementById('logo');
+    dark.addEventListener('click', () => {
+        body.classList.add('dark');
+        logo.style.transitionDuration = '0.17s'; 
+        logo.style.opacity = '0'
+        setTimeout(() => {
+            logo.style.transitionDuration = '500ms'; 
+
+        logo.src='./logo1.jpeg'
+        logo.style.opacity = '1'; 
+        },500)
+    });
+    light.addEventListener('click', () => {
+        body.classList.remove('dark');
+        logo.style.opacity = '0'
+        logo.style.transitionDuration = '0.17s'; 
+
+    
+        setTimeout(() => {
+            logo.style.transitionDuration = '500ms'; 
+
+        logo.src='./logo.jpeg'
+        logo.style.opacity = '1'; 
+        }, 500)
+    });
+    </script>
 </html>
